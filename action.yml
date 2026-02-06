@@ -7,10 +7,10 @@ branding:
   color: 'blue'
 
 inputs:
-  kernel-url: https://github.com/DarkCreed99/android_kernel_asus_sdm660.git
+  kernel-url: 
     description: 'URL of the Android kernel source repository'
     required: true
-  kernel-branch: stable
+  kernel-branch: 
     description: 'Branch name of the main kernel source repository'
     required: true
     default: main
@@ -22,7 +22,7 @@ inputs:
     description: 'Git clone depth for faster downloads'
     required: false
     default: '1'
-  config: asus/X00TD_defconfig
+  config: 
     description: 'Name of the kernel configuration file to use'
     required: true
     default: defconfig
@@ -30,7 +30,7 @@ inputs:
     description: 'Target CPU architecture for cross-compilation'
     required: true
     default: arm64
-  android-version: 16
+  android-version:
     description: 'Android version for AOSP toolchain selection'
     required: true
     default: ''
