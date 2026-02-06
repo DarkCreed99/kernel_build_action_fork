@@ -15,16 +15,16 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/DarkCreed99/android_kernel_asus_sdm660.git
+          kernel-dir: kernel-4.19
+          kernel-branch: stable
+          config: asus/X00TD_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: true
+          ksu: false
           ksu-version: main
-          android-version: 12
+          android-version: 16
           aosp-clang-version: r383902
           disable-lto: true
           anykernel3: true
