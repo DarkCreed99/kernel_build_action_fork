@@ -6,7 +6,7 @@ on:
 jobs:
   Build-Kernel:
     strategy:
-      fail-fast: false
+      fail-fast: true
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -24,7 +24,7 @@ jobs:
           aosp-clang: true
           ksu: false
           ksu-version: false
-          android-version: 16
+          android-version: 12
           aosp-clang-version: r383902
           disable-lto: true
-          anykernel3: false
+          anykernel3: true
