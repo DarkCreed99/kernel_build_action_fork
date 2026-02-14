@@ -2,8 +2,6 @@
 rm -rf ~/.cache/clang
 rm -rf /tmp/*.tar.gz
 rm -rf /tmp/*.tar.xz
-# Ensure disk has space
-df -h
 # A simple action usage
 name: Build Kernel
 on:
