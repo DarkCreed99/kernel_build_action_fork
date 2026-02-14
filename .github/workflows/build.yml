@@ -2,7 +2,6 @@
 name: Build Kernel
 on:
   workflow_dispatch:
-
 jobs:
   Build-Kernel:
     strategy:
@@ -10,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
     steps:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
@@ -24,7 +22,7 @@ jobs:
           aosp-clang: true
           ksu: false
           ksu-version: false
-          android-version: 16
+          android-version: 12
           aosp-clang-version: r547379
           disable-lto: true
           anykernel3: true
